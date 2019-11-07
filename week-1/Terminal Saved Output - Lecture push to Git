@@ -1,0 +1,78 @@
+Last login: Mon Oct  7 17:07:40 on ttys001
+(base) Sams-MacBook-Pro:~ SDMAN$ cd Documents/
+(base) Sams-MacBook-Pro:Documents SDMAN$ cd lecture_notes/
+-bash: cd: lecture_notes/: No such file or directory
+(base) Sams-MacBook-Pro:Documents SDMAN$ cd flatiron
+(base) Sams-MacBook-Pro:flatiron SDMAN$ cd lecture_notes/
+(base) Sams-MacBook-Pro:lecture_notes SDMAN$ git clone https://github.com/sdman135/nyc-ds-100719-lectures.git
+fatal: destination path 'nyc-ds-100719-lectures' already exists and is not an empty directory.
+(base) Sams-MacBook-Pro:lecture_notes SDMAN$ git remote -v
+upstream	https://github.com/learn-co-students/nyc-ds-100719-lectures.git (fetch)
+upstream	https://github.com/learn-co-students/nyc-ds-100719-lectures.git (push)
+(base) Sams-MacBook-Pro:lecture_notes SDMAN$ git fetch upstream
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/learn-co-students/nyc-ds-100719-lectures
+   4761f5b..31bbbc7  master     -> upstream/master
+(base) Sams-MacBook-Pro:lecture_notes SDMAN$ git branch
+* master
+(base) Sams-MacBook-Pro:lecture_notes SDMAN$ git merge upstream/master -m 'what you updated'
+Updating 4761f5b..31bbbc7
+Fast-forward (no commit created; -m option ignored)
+ week-1/Welcome to GIT.pdf | Bin 0 -> 233481 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 week-1/Welcome to GIT.pdf
+(base) Sams-MacBook-Pro:lecture_notes SDMAN$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+(base) Sams-MacBook-Pro:lecture_notes SDMAN$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.CFUserTextEncoding
+	../../../.Trash/
+	../../../.anaconda/
+	../../../.bash_history
+	../../../.bash_profile
+	../../../.bash_profile-anaconda3.bak
+	../../../.bash_profile.pysave
+	../../../.bash_sessions/
+	../../../.conda/
+	../../../.condarc
+	../../../.gitconfig
+	../../../.idlerc/
+	../../../.ipynb_checkpoints/
+	../../../.ipython/
+	../../../.jupyter/
+	../../../.python_history
+	../../../.viminfo
+	../../../Applications/
+	../../../Desktop/
+	../../
+	../../../Downloads/
+	../../../Flatiron/
+	../../../Google Drive/
+	../../../Introduction to Data Science Immersive.pptx
+	../../../Library/
+	../../../Movies/
+	../../../Music/
+	../../../Pictures/
+	../../../Public/
+	../../../PycharmProjects/
+	../../../Untitled.ipynb
+	../../../dsc-learn-lessons-lab-nyc-ds-100719/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) Sams-MacBook-Pro:lecture_notes SDMAN$ ls
+nyc-ds-100719-lectures
+(base) Sams-MacBook-Pro:lecture_notes SDMAN$ 
